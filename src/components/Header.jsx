@@ -8,7 +8,7 @@ import { SlMenu } from "react-icons/sl";
 import { IoIosSearch } from "react-icons/io";
 import { RiVideoAddLine } from "react-icons/ri";
 import { FiBell } from "react-icons/fi";
-import { CgClose } from "react-icons/cg";
+import { CgClose, CgCloseO } from "react-icons/cg";
 
 import { myContext } from "../context/ContextApi";
 
@@ -47,7 +47,7 @@ const Header = () => {
              onClick={mobileMenuToggle}
           >
             {mobileMenu ? (
-              <CgClose className="text-white text-xl" />
+              <CgCloseO className="text-white text-xl" />
             ) : (
               <SlMenu className="text-white text-xl" />
             )}
@@ -56,7 +56,7 @@ const Header = () => {
 
         <Link to="/" className=" logo flex h-5 items-center">
           <img
-            className="h-full hidden dark:md:block"
+            className="h-full hidden dark:md:block md:block"
             src={ytLogo}
             alt="youtube"
           />
