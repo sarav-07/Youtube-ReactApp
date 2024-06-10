@@ -27,7 +27,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`md:block w-[240px] overflow-y-auto h-full py-4 absolute bg-black md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${
+      className={`sidebar md:block w-[240px] overflow-y-auto h-full py-4 absolute bg-black md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${
         mobileMenu ? "translate-x-[0px]" : ""
       }`}
     >
