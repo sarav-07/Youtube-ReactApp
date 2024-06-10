@@ -12,7 +12,7 @@ const App = () => {
     <div>
       <AppContext>
         <BrowserRouter>
-          <div className="flex flex-col h-full fixed">
+          <div className="flex flex-col h-full w-full fixed">
             <Header />
             <Routes>
               <Route exact path="/" element={<Feed />} />
